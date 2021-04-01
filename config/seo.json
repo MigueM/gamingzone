@@ -1,20 +1,33 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+  "@context": "https://schema.org",
+  "@type": "ComputerStore",
+  "name": "gaming zone",
+  "title": "Gaming zone",
+  "titleTemplate": "GamingZone",
+  "description": "Tienda de artículos de computación🎧💻 / Especialistas en gaming🕹🎯 / Envíos a todo el pais🚚🇦🇷📦 / Ser Nº1 depende de vos🏆😎 / Frames win games🥇🎮",
+  "image": [
+    {
+      "url": "/icon.png",
+      "width": 500,
+      "height": 500,
+      "alt": "GamingZone"
+    }
+  ],
+  "@id": "https://gamingzone.vercel.app/",
+  "priceRange": "$$$",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
-    "type": "website",
+    "title": "Gaming zone",
+    "description": "Tienda de artículos de computación🎧💻 / Especialistas en gaming🕹🎯 / Envíos a todo el pais🚚🇦🇷📦 / Ser Nº1 depende de vos🏆😎 / Frames win games🥇🎮",
+    "type": "commerce",
     "locale": "en_IE",
     "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "site_name": "GamingZone",
     "images": [
       {
         "url": "/card.png",
         "width": 800,
         "height": 600,
-        "alt": "Next.js Commerce"
+        "alt": "GamingZone"
       }
     ]
   },
@@ -22,5 +35,13 @@
     "handle": "@nextjs",
     "site": "@nextjs",
     "cardType": "summary_large_image"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "",
+    "addressLocality": "La plata",
+    "addressRegion": "BUE",
+    "postalCode": "1900",
+    "addressCountry": "AR"
   }
 }
