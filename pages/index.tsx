@@ -42,18 +42,6 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <Grid>
-        {products.slice(0, 3).map((product, i) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            imgProps={{
-              width: i === 0 ? 1080 : 540,
-              height: i === 0 ? 1080 : 540,
-            }}
-          />
-        ))}
-      </Grid>
       <Marquee variant="secondary">
         {products.slice(0, 3).map((product, i) => (
           <ProductCard
@@ -67,15 +55,22 @@ export default function Home({
           />
         ))}
       </Marquee>
+      <Grid>
+        {products.slice(0, 3).map((product, i) => (
+          <ProductCard
+            key={product.id}
+            product={product}
+            imgProps={{
+              width: i === 0 ? 1080 : 540,
+              height: i === 0 ? 1080 : 540,
+            }}
+          />
+        ))}
+      </Grid>
       <Hero
-        headline="Release Details: The Yeezy BOOST 350 V2 ‘Natural'"
+        headline="Gaming Zone"
         description="
-        The Yeezy BOOST 350 V2 lineup continues to grow. We recently had the
-        ‘Carbon’ iteration, and now release details have been locked in for
-        this ‘Natural’ joint. Revealed by Yeezy Mafia earlier this year, the
-        shoe was originally called ‘Abez’, which translated to ‘Tin’ in
-        Hebrew. It’s now undergone a name change, and will be referred to as
-        ‘Natural’."
+        Tienda de artículos de computación🎧💻 / Especialistas en gaming🕹🎯 / Envíos a todo el pais🚚🇦🇷📦 / Ser Nº1 depende de vos🏆😎 / Frames win games🥇🎮"
       />
       <Grid layout="B">
         {products.slice(0, 3).map((product, i) => (
