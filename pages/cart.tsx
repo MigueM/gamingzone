@@ -46,7 +46,7 @@ export default function Cart() {
               <Bag className="absolute" />
             </span>
             <h2 className="pt-6 text-2xl font-bold tracking-wide text-center">
-              Your cart is empty
+              Tu carrito esta vacio
             </h2>
             <p className="text-accents-6 px-10 text-center pt-2">
               Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
@@ -58,8 +58,8 @@ export default function Cart() {
               <Cross width={24} height={24} />
             </span>
             <h2 className="pt-6 text-xl font-light text-center">
-              We couldn’t process the purchase. Please check your card
-              information and try again.
+              No pudimos procesar la compra. Por favor checkea la informacion de
+              tu tarjeta de credito.
             </h2>
           </div>
         ) : success ? (
@@ -68,13 +68,13 @@ export default function Cart() {
               <Check />
             </span>
             <h2 className="pt-6 text-xl font-light text-center">
-              Thank you for your order.
+              Gracias por su compra.
             </h2>
           </div>
         ) : (
           <div className="px-4 sm:px-6 flex-1">
-            <Text variant="pageHeading">My Cart</Text>
-            <Text variant="sectionHeading">Review your Order</Text>
+            <Text variant="pageHeading">Mi carrito</Text>
+            <Text variant="sectionHeading">Tu orden</Text>
             <ul className="py-6 space-y-6 sm:py-0 sm:space-y-0 sm:divide-y sm:divide-accents-2 border-b border-accents-2">
               {data!.lineItems.map((item) => (
                 <CartItem
@@ -86,8 +86,7 @@ export default function Cart() {
             </ul>
             <div className="my-6">
               <Text>
-                Before you leave, take a look at these items. We picked them
-                just for you
+                Antes de salir mira estos items que seleccionamos para vos
               </Text>
               <div className="flex py-6 space-x-6">
                 {[1, 2, 3, 4, 5, 6].map((x) => (
@@ -156,11 +155,11 @@ export default function Cart() {
             <div className="w-full lg:w-72">
               {isEmpty ? (
                 <Button href="/" Component="a" width="100%">
-                  Continue Shopping
+                  Continua comprando
                 </Button>
               ) : (
                 <Button href="/checkout" Component="a" width="100%">
-                  Proceed to Checkout
+                  Proceder al checkout
                 </Button>
               )}
             </div>
